@@ -966,6 +966,13 @@
                     isCorrect = true;
                 }
             }
+                
+            if (targetRawName === '거제시') {
+                if (userClean === '야호' || userClean === '거제야호') {
+                    isCorrect = true;
+                }
+            }
+
 
             if (!isCorrect) {
                 const targetClean = normalizeStr(targetRawName).replace(/\(.+\)/g, '');
